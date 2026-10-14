@@ -1,12 +1,35 @@
 # Godot Survival Core Lite – survival & crafting starter for Godot 4 (free, MIT)
 
-**Needs, day/night, slot inventory, data-driven crafting and gatherables – pure-logic, typed GDScript, headless-tested.**
+**Godot Survival Core Lite is a free, MIT-licensed Godot 4 survival crafting starter kit / project template in typed GDScript.**
+
+[![Godot 4.7](https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white)](https://godotengine.org) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Tests: 48 passing](https://img.shields.io/badge/tests-48%20passing-brightgreen)](tools/run_tests.sh) [![Pro: €12](https://img.shields.io/badge/Pro-%E2%82%AC12-ff5c5c)](https://huginhelm.itch.io/godot-survival-core)
+
+- **Engine:** Godot 4.7 (tested on 4.7.2) · **Language:** typed GDScript · **Licence:** MIT
+- **Tests:** 48 headless checks passing (`bash tools/run_tests.sh`)
+- **Website:** https://openclawaimac.github.io/godot-survival-core/ · **Pro edition (€12, 144 tests, commercial EULA):** https://huginhelm.itch.io/godot-survival-core
+- **For AI agents:** [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt)
 
 ![Demo](docs/demo.gif)
 
-▶️ **[Play the web demo](https://huginhelm.itch.io/godot-survival-core)** · ⭐ **[Get Godot Survival Core Pro](https://huginhelm.itch.io/godot-survival-core)**
+## Quickstart
+```bash
+git clone https://github.com/openclawaimac/godot-survival-core-lite.git && cd godot-survival-core-lite
+godot --headless --path . --import      # first import (registers class_name scripts)
+bash tools/run_tests.sh /path/to/godot  # expect: RESULT: PASS 48 checks
+godot --path .                          # run the demo (or open project.godot and press F5)
+```
+To use it in your own game, copy `addons/survival_core/` into your project.
 
-Godot **4.7** (tested on 4.7.2) · typed GDScript · MIT · v0.4.0
+## Lite vs Pro (summary)
+| | Lite (this repo) | Pro |
+|---|---|---|
+| Price | Free | €12 |
+| Licence | MIT | Commercial per-seat EULA |
+| Headless tests | 48 | 144 |
+| Same API | ✅ | ✅ (upgrade without code changes) |
+| Where | https://github.com/openclawaimac/godot-survival-core-lite | [https://huginhelm.itch.io/godot-survival-core](https://huginhelm.itch.io/godot-survival-core) |
+
+Full comparison below and on https://openclawaimac.github.io/godot-survival-core/
 
 ## Features
 - SurvivalStats: hunger/thirst drain, starvation damage, regeneration, death signal

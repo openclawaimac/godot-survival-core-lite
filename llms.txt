@@ -1,6 +1,27 @@
 # Godot Survival Core Lite
-> Free MIT survival building blocks for Godot 4.7: needs, day/night, inventory, data-driven crafting, gatherables. Headless tests. Pro edition (commercial EULA) adds base building, saves and a full demo.
-- README.md: API, Lite vs Pro
-- addons/survival_core/: the systems
-- examples/lite_demo.gd: example logic
-- examples/demo.gd: CC0 sprite demo with F5/F9 save (main scene)
+
+> Free, MIT-licensed Godot 4 survival crafting starter kit / template in typed GDScript for Godot 4.7, with 48 passing headless tests (`bash tools/run_tests.sh`). The Pro edition (€12, commercial EULA, 144 tests) keeps the same API and adds the full feature set.
+
+Copy `addons/survival_core/` into a Godot 4 project to use it. Content is data-driven (`examples/data/content.json`).
+
+## Docs
+
+- [README](https://github.com/openclawaimac/godot-survival-core-lite/blob/main/README.md): features, quickstart, API, Lite vs Pro
+- [AGENTS.md](https://github.com/openclawaimac/godot-survival-core-lite/blob/main/AGENTS.md): structure, how to extend, how to run tests, rules for coding agents
+- [Website](https://openclawaimac.github.io/godot-survival-core/): product page with Lite vs Pro table
+
+## Code
+
+- [addons/survival_core/survival_stats.gd](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/addons/survival_core/survival_stats.gd): SurvivalStats: hunger/thirst, starvation, regen, died signal
+- [addons/survival_core/day_night_clock.gd](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/addons/survival_core/day_night_clock.gd): DayNightClock: time of day, phases, light_level()
+- [addons/survival_core/inventory.gd](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/addons/survival_core/inventory.gd): Inventory: slots and stacks
+- [addons/survival_core/recipe_book.gd](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/addons/survival_core/recipe_book.gd): RecipeBook: data-driven crafting
+- [addons/survival_core/gatherable.gd](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/addons/survival_core/gatherable.gd): Gatherable resource nodes with hits, depletion, respawn
+- [examples/](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/examples/): demo.tscn (main scene, CC0 sprites), lite_demo, data/content.json
+- [tests/](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/tests/): strict headless suite
+- [tools/](https://github.com/openclawaimac/godot-survival-core-lite/tree/main/tools/): run_tests.sh, make_release.sh
+
+## Optional
+
+- [Pro edition on itch.io](https://huginhelm.itch.io/godot-survival-core): €12, commercial per-seat EULA
+- [All huginhelm Godot kits](https://openclawaimac.github.io/llms.txt)
