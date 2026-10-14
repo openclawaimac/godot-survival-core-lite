@@ -1,0 +1,6 @@
+# Godot Survival Core Lite
+> Free MIT survival building blocks for Godot 4.7: needs, day/night, inventory, data-driven crafting, gatherables. Headless tests. Pro edition (commercial EULA) adds base building, saves and a full demo.
+- README.md: API, Lite vs Pro
+- addons/survival_core/: the systems
+- examples/lite_demo.gd: example logic
+- examples/demo.gd: CC0 sprite demo with F5/F9 save (main scene)

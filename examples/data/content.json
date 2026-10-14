@@ -1,0 +1,20 @@
+{
+  "_comment": "Lite sample content: items, hand recipes and gatherables are data. Edit here, no code changes needed.",
+  "items": {
+    "wood": {"name": "Wood"},
+    "stone": {"name": "Stone"},
+    "berries": {"name": "Berries", "food": {"hunger": 15, "thirst": 5}},
+    "torch": {"name": "Torch"},
+    "trail_mix": {"name": "Trail Mix", "food": {"hunger": 30, "thirst": 0}}
+  },
+  "recipes": [
+    {"out": "torch", "in": {"wood": 2}, "count": 1},
+    {"out": "trail_mix", "in": {"berries": 3}, "count": 1},
+    {"out": "stone", "in": {"wood": 4}, "count": 1}
+  ],
+  "gatherables": [
+    {"item": "wood", "x": 420, "y": 300, "hits": 3, "respawn_sec": 8, "color": "#3f8f3a", "radius": 22},
+    {"item": "stone", "x": 760, "y": 260, "hits": 2, "respawn_sec": 10, "color": "#8b8f96", "radius": 18},
+    {"item": "berries", "x": 600, "y": 470, "hits": 2, "respawn_sec": 6, "color": "#c0394b", "radius": 16}
+  ]
+}
